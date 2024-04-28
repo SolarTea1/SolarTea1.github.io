@@ -1,4 +1,5 @@
-<!doctype html>
+
+  <!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -10,6 +11,9 @@
         <link rel="stylesheet" href="resources/fontawesome-all.min.css">
         <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
         <link rel="stylesheet" href="./resources/qgis2web.css">
+		<link rel='shortcut icon' href='https://www.camden.nsw.gov.au/themes/camden-council/icons/Camden-Council-Logo-Trans_inv.png' type='image/x-icon' />
+  <link rel="icon" type="image/png" href="https://www.camden.nsw.gov.au/themes/camden-council/icons/Camden-Council-Logo-Trans_inv.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://www.camden.nsw.gov.au/themes/camden-council/icons/Camden-Council-Logo-Trans_inv.png" sizes="16x16" />
 <style>
 .search-layer {
   top: 65px;
@@ -18,10 +22,10 @@
 .ol-touch .search-layer {
   top: 80px;
 }
-</style>
-        <style>
+
         html, body {
-            background-color: #ffffff;
+            background-color: #E4EFFB;
+			font-family:Arial, sans-serif;
         }
         .ol-control button {
             background-color: #f8f8f8 !important;
@@ -41,26 +45,122 @@
             background: rgba(255, 255, 255, 0.5) !important;
             color: black !important;
         }
-        </style>
-        <style>
+		.titlebox {
+			font-size:46px;
+			padding:20px 0px 20px 0px;
+			background-color:#F28C28;
+			width:100%;
+			color:white;
+		}
+		
+		.tg  {
+			border-style:hidden;
+			border-collapse:collapse;
+			border-spacing:0;
+		}
+		.tg td{
+			border-color:#E4EFFB;
+			border-style:solid;
+			border-width:4px;
+			font-family:Arial, sans-serif;
+			font-size:14px;
+			overflow:hidden;
+			padding:7px 20px;
+			word-break:normal;
+		}
+		.tg th{
+			border-color:#E4EFFB;
+			border-style:solid;
+			border-width:4px;
+			font-family:Arial, sans-serif;
+			font-size:14px;
+			font-weight:normal;
+			overflow:hidden;
+			padding:7px 20px;
+			word-break:normal;
+			}
+		.tg .tg-0pky{
+		
+		text-align:left;
+		vertical-align:center;
+		padding:15px 10px 15px 10px;
+		background-color: #288ef2
+		}
+		.tg .tg-0pkx{
+		
+		text-align:left;
+		vertical-align:center;
+		padding:15px 10px 15px 10px;
+		background-color: #F28C28
+		}
+		.tg .tg-0lax{
+		
+		text-align:left;
+		vertical-align:center;
+		background-color: #f33d99
+		}
+		.tg .tg-0lay{
+		
+		text-align:left;
+		vertical-align:center;
+		background-color: green
+		}
+
         #map {
-            width: 1426px;
+            width: 80%;
+			margin-left:auto;
+			margin-right:auto;
             height: 854px;
         }
-        </style>
-        <title>Potential Train Station Locations in Camden</title>
+		
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #CCCCCC;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #CCCCCC;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+        <title> Potential Train Station Locations in Camden</title>
     </head>
     <body>
-        <div style="padding-left:30px;">
-        <div style="font-size:46px;padding-top:20px;">Potential Locations for a New Train Station in Camden LGA</div>
-        <div style="width:1426px; padding-top:20px; padding-bottom:10px;">This Map explores 16 potential locations for a new train station in Camden.Each potential station has attributes for:<br>
-   &nbsp;&nbsp;&nbsp;&nbsp;Total property value uplift ($M)<br>
-   &nbsp;&nbsp;&nbsp;&nbsp;Projected population within 2km by 2028<br>
-   &nbsp;&nbsp;&nbsp;&nbsp;Potential daily car trips saved by 2028.<br><br>
-
-Note: These attributes are calculated ONLY for properties and populations with the Camden LGA.<br><br>
-
-Click and drag to move around the map. Scroll to zoom. Click on a potential station location to see attributes. Use the legend to show or hide available layers.</div>
+        <div style="margin:auto;">
+        <div class="titlebox">&nbsp;Potential Locations for a New Train Station in Camden LGA</div>
+		<div style="padding-top:30px;padding-bottom:30px;">
+<table class="tg" style="undefined;table-layout: fixed; width: 80%;margin-left:auto; margin-right:auto; color: white;">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<tbody>
+  <tr>
+    <td class="tg-0pky" rowspan="2"><strong>This Map explores 16 potential locations for a new train station in Camden</strong><br><br>Each potential station has attributes for:<br><div style="margin:15px">Total property value uplift ($M)<br>Projected population within 2km by 2028<br>Potential daily car trips saved by 2028.</div></td>
+    <td class="tg-0lax">These attributes are calculated <strong>only</strong> for properties and populations with the Camden LGA.</td>
+  </tr>
+  <tr>
+    <td class="tg-0lay">Click and drag to move around the map.<br>Scroll to zoom.<br>Click on a potential station location to see attributes.<br>Use the legend to show or hide available layers.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pkx" colspan="2" style="text-align:center;"><strong><a href="https://www.abc.net.au/news">Click here to see the project dashboard</a><strong></td>
+  </tr>
+</tbody>
+</table></div>
         <div id="map">
             <div id="popup" class="ol-popup">
                 <a href="#" id="popup-closer" class="ol-popup-closer"></a>
