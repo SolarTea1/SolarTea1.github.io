@@ -46,7 +46,7 @@
             color: black !important;
         }
 		.titlebox {
-			font-size:46px;
+			
 			padding:20px 0px 20px 0px;
 			background-color:#F28C28;
 			width:100%;
@@ -109,7 +109,7 @@
 		
 		text-align:left;
 		vertical-align:center;
-		background-color: green;
+		background-color:#00C3A7;
 		color:white;
 		}
 
@@ -144,27 +144,32 @@ a:active {
   text-decoration: underline;
 }
 </style>
-        <title> Potential Train Station Locations in Camden</title>
+        <title>New Train Station</title>
     </head>
     <body>
         <div style="margin:auto;">
-        <div class="titlebox">&nbsp;Potential Locations for a New Train Station in Camden LGA</div>
+		<div class="titlebox">
+       <table><tr><td style="font-size:46px; width:90%;"> &nbsp;Potential Locations for a New Train Station in Camden LGA</td>
+	   <td style="width:20%;text-align:right"> Created by Eden Brender <br>for UNSW BENV7504</td</tr></table>
+	   </div>
 		<div style="padding-top:30px;padding-bottom:4px;">
 <table class="tg" style="undefined;table-layout: fixed; width: 80%;margin-left:auto; margin-right:auto;">
 <colgroup>
 <col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 25%">
+<col style="width: 25%">
 </colgroup>
 <tbody>
   <tr>
-    <td class="tg-0pky" rowspan="2"><strong>This Map explores 16 potential locations for a new train station in Camden</strong><br><br>Each potential station has attributes for:<br><div style="margin:15px">Total property value uplift ($M)<br>Projected population within 2km by 2028<br>Potential daily car trips saved by 2028.</div></td>
-    <td class="tg-0lax">These attributes are calculated <strong>only</strong> for properties and populations with the Camden LGA.</td>
+    <td class="tg-0pky" rowspan="2"><strong>This Map explores 16 potential locations for a new train station in Camden</strong><br><br>Each potential station has attributes for:<br><div style="margin:15px">Total property value uplift ($M)<br>Projected population within 2km by 2028<br>Potential daily car trips saved by 2028.</div>These attributes are calculated <strong>only</strong> for properties and populations with the Camden LGA.</td>
+<td class="tg-0lay" colspan="2">Click and drag to move around the map.<br>Scroll to zoom.<br>Click on a potential station location to see attributes.<br>Use the legend to show or hide available layers.</td>
+  </tr>
+  <tr><td class="tg-0lax"><strong><a href="https://www.abc.net.au/news">Click here to download the data</a><strong></td>
+	<td class="tg-0pky"><strong><a href="https://www.abc.net.au/news">Click here to see the technical workflow</a><strong></td>
+    
   </tr>
   <tr>
-    <td class="tg-0lay">Click and drag to move around the map.<br>Scroll to zoom.<br>Click on a potential station location to see attributes.<br>Use the legend to show or hide available layers.</td>
-  </tr>
-  <tr>
-    <td class="tg-0pkx" colspan="2" style="text-align:center;"><strong><a href="https://www.abc.net.au/news">Click here to see the project dashboard</a><strong></td>
+    <td class="tg-0pkx" colspan="3" style="text-align:center;"><strong><a href="https://www.abc.net.au/news">Click here to see the project dashboard</a><strong></td>
   </tr>
 </tbody>
 </table></div>
@@ -173,7 +178,9 @@ a:active {
                 <a href="#" id="popup-closer" class="ol-popup-closer"></a>
                 <div id="popup-content"></div>
             </div>
-        </div>
+        </div><div class="titlebox">
+
+	   </div>
         </div>
         <script src="resources/qgis2web_expressions.js"></script>
         <script src="resources/polyfills.js"></script>
