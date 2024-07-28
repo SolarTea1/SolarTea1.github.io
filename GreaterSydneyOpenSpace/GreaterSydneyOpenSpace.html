@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <link rel="stylesheet" href="./resources/ol.css">
+      <link rel="stylesheet" href="/resources/fontawesome-all.min.css">
+      <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+      <link rel="stylesheet" href="./resources/qgis2web.css">
+      <link rel='shortcut icon' href=''type='image/x-icon' />
+      <link rel="icon" type="image/png" href="" sizes="32x32" />
+      <link rel="icon" type="image/png" href="" sizes="16x16" />
+      <style>
+         .search-layer {
+         top: 65px;
+         left: .5em;
+         }
+         .ol-touch .search-layer {
+         top: 80px;
+         }
+         html, body {
+         background-color: #E4EFFB;
+         font-family:Arial, sans-serif;
+         }
+         .ol-control button {
+         background-color: #f8f8f8 !important;
+         color: #000000 !important;
+         border-radius: 0px !important;
+         }
+         .ol-zoom, .geolocate, .gcd-gl-control .ol-control {
+         background-color: rgba(255,255,255,.4) !important;
+         padding: 3px !important;
+         }
+         .ol-scale-line {
+         background: none !important;
+         }
+         .ol-scale-line-inner {
+         border: 2px solid #f8f8f8 !important;
+         border-top: none !important;
+         background: rgba(255, 255, 255, 0.5) !important;
+         color: black !important;
+         }
+         .titlebox {
+         padding:20px 0px 20px 0px;
+         background-color:#F28C28;
+         width:100%;
+         color:white;
+         }
+         .tg  {
+         border-style:hidden;
+         border-collapse:collapse;
+         border-spacing:0;
+         color:white;
+         }
+         .tg td{
+         border-color:#E4EFFB;
+         border-style:solid;
+         border-width:4px;
+         font-family:Arial, sans-serif;
+         font-size:14px;
+         overflow:hidden;
+         padding:4px 0px;
+         word-break:normal;
+         color:white;
+         }
+         .tg th{
+         border-color:#E4EFFB;
+         border-style:solid;
+         border-width:4px;
+         font-family:Arial, sans-serif;
+         font-size:14px;
+         font-weight:normal;
+         overflow:hidden;
+         padding:7px 20px;
+         word-break:normal;
+         color:white;
+         }
+         .tg .tg-info{
+         text-align:left;
+         vertical-align:center;
+         padding:15px 10px 15px 10px;
+         background-color: #288ef2;
+         color:white;
+         }
+         .tg .tg-button{
+         text-align:left;
+         vertical-align:center;
+         background-color: #f33d99;
+         color:white;
+         }
+         .tg .tg-howTo{
+         text-align:left;
+         vertical-align:center;
+         background-color:green;
+         color:white;
+         padding:15px 10px 15px 10px;
+         }
+         .tg .tg-header{
+         vertical-align:center;
+         padding:15px 10px 15px 10px;
+         color:white;
+         }
+         #map {
+         width: 80%;
+         margin-left:auto;
+         margin-right:auto;
+         height: 854px;
+         }
+		 a{
+		 display:block; 
+		 height:40px; 
+		 width:100%;
+		 line-height:40px;
+		 }
+         a:link {
+         color: white;
+         background-color: transparent;
+         text-decoration: underline;
+         }
+         a:visited {
+         color: white;
+         background-color: transparent;
+         text-decoration: underline;
+         }
+         a:hover {
+         color: #CCCCCC;
+		 background-color: #CCCCCC9F;
+         text-decoration: underline;
+         }
+         a:active {
+         color: #CCCCCC;
+         background-color: transparent;
+         text-decoration: underline;
+         }
+      </style>
+      <title>Interactive Map</title>
+   </head>
+   <body>
+      <div style="margin:auto;">
+         <div class="titlebox">
+            <table class="tg" style="width:100%">
+               <colgroup>
+                  <col style="width: 90%">
+                  <col style="width: 10%">
+               </colgroup>
+               <tr>
+                  <td class="tg-header" style="font-size:46px;"> &nbsp;Is the Green Space in Greater Sydney Distributed Fairly?</td>
+                  <td class="tg-header" style="text-align:right;"> Created by Eden Brender <br>for UNSW BENV7728</td>
+               </tr>
+            </table>
+         </div>
+         <div style="padding-top:30px;padding-bottom:4px;">
+            <table class="tg" style="undefined;table-layout: fixed; width: 80%;margin-left:auto; margin-right:auto;">
+               <colgroup>
+                  <col style="width: 50%">
+                  <col style="width: 25%">
+                  <col style="width: 25%">
+               </colgroup>
+               <tbody>
+                  <tr>
+                     <td class="tg-info" rowspan="4">
+                        <strong>This Map explores the relationship between public open space and socioeconomic status</strong><br><br>Each suburb has attributes for:<br>
+                        <div style="margin:15px">Public space by area percentage and per capita<br>Public space (including bushland) by area percentage and per capita<br>Socioeconoimic status - index of relative socioeconomic advantage and disadvantage (IRSAD)</div>
+                     </td>
+                     <td class="tg-howTo" colspan="2"><strong>How to Use the Map</strong><br><br>Click and drag to pan around the map<br>Scroll to zoom<br>Click on a suburb to see attributes<br>Use the legend to show or hide available layers</td>
+                  </tr>
+                  <tr>
+                     <td class="tg-button" style="text-align:center;"><strong><a href="https://drive.google.com/file/d/1eVyAmlyk1fj3naL5KKTk6qDCkahG_IXq/view?usp=drive_link">Get the data (.gpkg)</a><strong></td>
+                     <td class="tg-button" style="text-align:center;"><strong><a href="">See the technical workflow (coming soon)</a><strong></td>
+                  </tr>                  
+		  <tr>
+<tr>
+                     <td class="tg-button" colspan="2" style="text-align:center;"><strong><a href="https://solartea1.github.io">Take me Home</a><strong></td>
+                  </tr>
+                  <tr>
+                     <td class="tg-button" colspan="3" style="text-align:center;"><strong><a href="">See the project dashboard (coming soon) </a><strong></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="resources/polyfills.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="http://cdn.polyfill.io/v2/polyfill.min.js?features=Element.prototype.classList,URL"></script>
+        <script src="resources/horsey.min.js"></script>
+        <script src="resources/ol3-search-layer.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="layers/SocioeconomicStatus_1.js"></script><script src="layers/PublicOpenSpaceincludingbushlandCoverage_2.js"></script><script src="layers/PublicOpenSpaceincludingbushlandperCapitasqm_3.js"></script><script src="layers/PublicOpenSpaceAreaCoverage_4.js"></script><script src="layers/PublicOpenSpaceperCapitasqm_5.js"></script><script src="layers/LocalGovernmentAreas_6.js"></script>
+        <script src="styles/SocioeconomicStatus_1_style.js"></script><script src="styles/PublicOpenSpaceincludingbushlandCoverage_2_style.js"></script><script src="styles/PublicOpenSpaceincludingbushlandperCapitasqm_3_style.js"></script><script src="styles/PublicOpenSpaceAreaCoverage_4_style.js"></script><script src="styles/PublicOpenSpaceperCapitasqm_5_style.js"></script><script src="styles/LocalGovernmentAreas_6_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
