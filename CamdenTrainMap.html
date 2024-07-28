@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <link rel="stylesheet" href="./resources/ol.css">
+      <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+      <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+      <link rel="stylesheet" href="./resources/qgis2web.css">
+      <link rel='shortcut icon' href='https://www.camden.nsw.gov.au/themes/camden-council/icons/Camden-Council-Logo-Trans_inv.png' type='image/x-icon' />
+      <link rel="icon" type="image/png" href="https://www.camden.nsw.gov.au/themes/camden-council/icons/Camden-Council-Logo-Trans_inv.png" sizes="32x32" />
+      <link rel="icon" type="image/png" href="https://www.camden.nsw.gov.au/themes/camden-council/icons/Camden-Council-Logo-Trans_inv.png" sizes="16x16" />
+      <style>
+         .search-layer {
+         top: 65px;
+         left: .5em;
+         }
+         .ol-touch .search-layer {
+         top: 80px;
+         }
+         html, body {
+         background-color: #E4EFFB;
+         font-family:Arial, sans-serif;
+         }
+         .ol-control button {
+         background-color: #f8f8f8 !important;
+         color: #000000 !important;
+         border-radius: 0px !important;
+         }
+         .ol-zoom, .geolocate, .gcd-gl-control .ol-control {
+         background-color: rgba(255,255,255,.4) !important;
+         padding: 3px !important;
+         }
+         .ol-scale-line {
+         background: none !important;
+         }
+         .ol-scale-line-inner {
+         border: 2px solid #f8f8f8 !important;
+         border-top: none !important;
+         background: rgba(255, 255, 255, 0.5) !important;
+         color: black !important;
+         }
+         .titlebox {
+         padding:20px 0px 20px 0px;
+         background-color:#F28C28;
+         width:100%;
+         color:white;
+         }
+         .tg  {
+         border-style:hidden;
+         border-collapse:collapse;
+         border-spacing:0;
+         color:white;
+         }
+         .tg td{
+         border-color:#E4EFFB;
+         border-style:solid;
+         border-width:4px;
+         font-family:Arial, sans-serif;
+         font-size:14px;
+         overflow:hidden;
+         padding:4px 0px;
+         word-break:normal;
+         color:white;
+         }
+         .tg th{
+         border-color:#E4EFFB;
+         border-style:solid;
+         border-width:4px;
+         font-family:Arial, sans-serif;
+         font-size:14px;
+         font-weight:normal;
+         overflow:hidden;
+         padding:7px 20px;
+         word-break:normal;
+         color:white;
+         }
+         .tg .tg-info{
+         text-align:left;
+         vertical-align:center;
+         padding:15px 10px 15px 10px;
+         background-color: #288ef2;
+         color:white;
+         }
+         .tg .tg-button{
+         text-align:left;
+         vertical-align:center;
+         background-color: #f33d99;
+         color:white;
+         }
+         .tg .tg-howTo{
+         text-align:left;
+         vertical-align:center;
+         background-color:green;
+         color:white;
+         padding:15px 10px 15px 10px;
+         }
+         .tg .tg-header{
+         vertical-align:center;
+         padding:15px 10px 15px 10px;
+         color:white;
+         }
+         #map {
+         width: 80%;
+         margin-left:auto;
+         margin-right:auto;
+         height: 854px;
+         }
+		 a{
+		 display:block; 
+		 height:40px; 
+		 width:100%;
+		 line-height:40px;
+		 }
+         a:link {
+         color: white;
+         background-color: transparent;
+         text-decoration: underline;
+         }
+         a:visited {
+         color: white;
+         background-color: transparent;
+         text-decoration: underline;
+         }
+         a:hover {
+         color: #CCCCCC;
+		 background-color: #CCCCCC9F;
+         text-decoration: underline;
+         }
+         a:active {
+         color: #CCCCCC;
+         background-color: transparent;
+         text-decoration: underline;
+         }
+      </style>
+      <title>Interactive Map</title>
+   </head>
+   <body>
+      <div style="margin:auto;">
+         <div class="titlebox">
+            <table class="tg" style="width:100%">
+               <colgroup>
+                  <col style="width: 90%">
+                  <col style="width: 10%">
+               </colgroup>
+               <tr>
+                  <td class="tg-header" style="font-size:46px;"> &nbsp;Potential Locations for a New Train Station in Camden LGA</td>
+                  <td class="tg-header" style="text-align:right;"> Created by Eden Brender <br>for UNSW BENV7504</td>
+               </tr>
+            </table>
+         </div>
+         <div style="padding-top:30px;padding-bottom:4px;">
+            <table class="tg" style="undefined;table-layout: fixed; width: 80%;margin-left:auto; margin-right:auto;">
+               <colgroup>
+                  <col style="width: 50%">
+                  <col style="width: 25%">
+                  <col style="width: 25%">
+               </colgroup>
+               <tbody>
+                  <tr>
+                     <td class="tg-info" rowspan="3">
+                        <strong>This Map explores 16 potential locations for a new train station in Camden</strong><br><br>Each potential station has attributes for:<br>
+                        <div style="margin:15px">Total property value uplift ($M)<br>Projected population within 2km by 2028<br>Potential daily car trips saved by 2028.</div>
+                        These attributes are calculated <strong>only</strong> for properties and populations with the Camden LGA
+                     </td>
+                     <td class="tg-howTo" colspan="2"><strong>How to Use the Map</strong><br><br>Click and drag to pan around the map<br>Scroll to zoom<br>Click on a potential station location to see attributes<br>Use the legend to show or hide available layers</td>
+                  </tr>
+                  <tr>
+                     <td class="tg-button" style="text-align:center;"><strong><a href="https://drive.google.com/file/d/1QWk4VQmEALhNdWHoIrAzG5drU_OnbqR_/view?usp=sharing">Get the data (.gpkg)</a><strong></td>
+                     <td class="tg-button" style="text-align:center;"><strong><a href="https://solartea1.github.io/Workflow">See the technical workflow</a><strong></td>
+                  </tr>                  
+		  <tr>
+                     <td class="tg-button" colspan="2" style="text-align:center;"><strong><a href="https://solartea1.github.io/Report.pdf">Read the report (.pdf)</a><strong></td>
+                  </tr>
+                  <tr>
+                     <td class="tg-button" colspan="3" style="text-align:center;"><strong><a href="https://solartea1.github.io/Dashboard">See the project dashboard</a><strong></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="map">
+            <div id="popup" class="ol-popup">
+               <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+               <div id="popup-content"></div>
+            </div>
+         </div>
+         <div class="titlebox">
+         </div>
+      </div>
+      <script src="resources/qgis2web_expressions.js"></script>
+      <script src="resources/polyfills.js"></script>
+      <script src="./resources/functions.js"></script>
+      <script src="./resources/ol.js"></script>
+      <script src="./resources/ol-layerswitcher.js"></script>
+      <script src="layers/WesternParklandCity_1.js"></script><script src="layers/LocalGovernmentArea_2.js"></script><script src="layers/SWGArezonedorreleasedland_3.js"></script><script src="layers/Threatenedecologicalcommunities_4.js"></script><script src="layers/CurrentRoutes_5.js"></script><script src="layers/FutureRoutes_6.js"></script><script src="layers/CurrentStations_7.js"></script><script src="layers/2028CarTripsDay_8.js"></script><script src="layers/2028Population_9.js"></script><script src="layers/ValueUpliftM_10.js"></script><script src="layers/PotentialStations_11.js"></script>
+      <script src="styles/WesternParklandCity_1_style.js"></script><script src="styles/LocalGovernmentArea_2_style.js"></script><script src="styles/SWGArezonedorreleasedland_3_style.js"></script><script src="styles/Threatenedecologicalcommunities_4_style.js"></script><script src="styles/CurrentRoutes_5_style.js"></script><script src="styles/FutureRoutes_6_style.js"></script><script src="styles/CurrentStations_7_style.js"></script><script src="styles/2028CarTripsDay_8_style.js"></script><script src="styles/2028Population_9_style.js"></script><script src="styles/ValueUpliftM_10_style.js"></script><script src="styles/PotentialStations_11_style.js"></script>
+      <script src="./layers/layers.js" type="text/javascript"></script> 
+      <script src="./resources/Autolinker.min.js"></script>
+      <script src="./resources/qgis2web.js"></script>
+   </body>
+</html>
