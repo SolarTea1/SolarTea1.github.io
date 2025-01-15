@@ -48,7 +48,7 @@ var lyr_PublicOpenSpaceincludingbushlandCoverage_2 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_PublicOpenSpaceincludingbushlandCoverage_2, 
                 style: style_PublicOpenSpaceincludingbushlandCoverage_2,
-                popuplayertitle: "Public Open Space (including bushland) Coverage (%)",
+                popuplayertitle: "Public Open Space (inc. bushland) Coverage",
                 interactive: true,
     title: 'Public Open Space (including bushland) Coverage (%)<br />\
     <img src="styles/legend/PublicOpenSpaceincludingbushlandCoverage_2_0.png" /> 0 - 3<br />\
@@ -68,7 +68,7 @@ var lyr_PublicOpenSpaceincludingbushlandperCapitasqm_3 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_PublicOpenSpaceincludingbushlandperCapitasqm_3, 
                 style: style_PublicOpenSpaceincludingbushlandperCapitasqm_3,
-                popuplayertitle: "Public Open Space (including bushland) per Capita (sqm)",
+                popuplayertitle: "Public Open Space (inc. bushland) per Capita",
                 interactive: true,
     title: 'Public Open Space (including bushland) per Capita (sqm)<br />\
     <img src="styles/legend/PublicOpenSpaceincludingbushlandperCapitasqm_3_0.png" /> 0 - 10<br />\
@@ -88,7 +88,7 @@ var lyr_PublicOpenSpaceAreaCoverage_4 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_PublicOpenSpaceAreaCoverage_4, 
                 style: style_PublicOpenSpaceAreaCoverage_4,
-                popuplayertitle: "Public Open Space Area Coverage (%)",
+                popuplayertitle: "Public Open Space Area Coverage",
                 interactive: true,
     title: 'Public Open Space Area Coverage (%)<br />\
     <img src="styles/legend/PublicOpenSpaceAreaCoverage_4_0.png" /> 0 - 0.36<br />\
@@ -108,7 +108,7 @@ var lyr_PublicOpenSpaceperCapitasqm_5 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_PublicOpenSpaceperCapitasqm_5, 
                 style: style_PublicOpenSpaceperCapitasqm_5,
-                popuplayertitle: "Public Open Space per Capita (sqm)",
+                popuplayertitle: "Public Open Space per Capita",
                 interactive: true,
     title: 'Public Open Space per Capita (sqm)<br />\
     <img src="styles/legend/PublicOpenSpaceperCapitasqm_5_0.png" /> 0 - 4.3<br />\
