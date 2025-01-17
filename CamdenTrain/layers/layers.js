@@ -25,7 +25,7 @@ var lyr_WesternParklandCity_1 = new ol.layer.Vector({
                 style: style_WesternParklandCity_1,
                 popuplayertitle: "Western Parkland City",
                 interactive: false,
-                title: '<img src="styles/legend/WesternParklandCity_1.png" /> Western Parkland City'
+                title: '<img src="./styles/legend/WesternParklandCity_1.png" /> Western Parkland City'
             });
 var format_LocalGovernmentArea_2 = new ol.format.GeoJSON();
 var features_LocalGovernmentArea_2 = format_LocalGovernmentArea_2.readFeatures(json_LocalGovernmentArea_2, 
