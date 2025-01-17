@@ -25,7 +25,7 @@ var lyr_WesternParklandCity_1 = new ol.layer.Vector({
                 style: style_WesternParklandCity_1,
                 popuplayertitle: "Western Parkland City",
                 interactive: false,
-                title: '<img src="./styles/legend/WesternParklandCity_1.png" /> Western Parkland City'
+                title: '<img src="CamdenTrain/styles/legend/WesternParklandCity_1.png" /> Western Parkland City'
             });
 var format_LocalGovernmentArea_2 = new ol.format.GeoJSON();
 var features_LocalGovernmentArea_2 = format_LocalGovernmentArea_2.readFeatures(json_LocalGovernmentArea_2, 
@@ -40,7 +40,7 @@ var lyr_LocalGovernmentArea_2 = new ol.layer.Vector({
                 style: style_LocalGovernmentArea_2,
                 popuplayertitle: "Local Government Area",
                 interactive: false,
-                title: '<img src="styles/legend/LocalGovernmentArea_2.png" /> Local Government Area'
+                title: '<img src="CamdenTrain/styles/legend/LocalGovernmentArea_2.png" /> Local Government Area'
             });
 var format_SWGArezonedorreleasedland_3 = new ol.format.GeoJSON();
 var features_SWGArezonedorreleasedland_3 = format_SWGArezonedorreleasedland_3.readFeatures(json_SWGArezonedorreleasedland_3, 
@@ -55,7 +55,7 @@ var lyr_SWGArezonedorreleasedland_3 = new ol.layer.Vector({
                 style: style_SWGArezonedorreleasedland_3,
                 popuplayertitle: "SWGA rezoned or released land",
                 interactive: false,
-                title: '<img src="styles/legend/SWGArezonedorreleasedland_3.png" /> SWGA rezoned or released land'
+                title: '<img src="CamdenTrain/styles/legend/SWGArezonedorreleasedland_3.png" /> SWGA rezoned or released land'
             });
 var format_Threatenedecologicalcommunities_4 = new ol.format.GeoJSON();
 var features_Threatenedecologicalcommunities_4 = format_Threatenedecologicalcommunities_4.readFeatures(json_Threatenedecologicalcommunities_4, 
@@ -70,7 +70,7 @@ var lyr_Threatenedecologicalcommunities_4 = new ol.layer.Vector({
                 style: style_Threatenedecologicalcommunities_4,
                 popuplayertitle: "Threatened ecological communities",
                 interactive: false,
-                title: '<img src="styles/legend/Threatenedecologicalcommunities_4.png" /> Threatened ecological communities'
+                title: '<img src="CamdenTrain/styles/legend/Threatenedecologicalcommunities_4.png" /> Threatened ecological communities'
             });
 var format_CurrentRoutes_5 = new ol.format.GeoJSON();
 var features_CurrentRoutes_5 = format_CurrentRoutes_5.readFeatures(json_CurrentRoutes_5, 
@@ -85,7 +85,7 @@ var lyr_CurrentRoutes_5 = new ol.layer.Vector({
                 style: style_CurrentRoutes_5,
                 popuplayertitle: "Current Routes",
                 interactive: false,
-                title: '<img src="styles/legend/CurrentRoutes_5.png" /> Current Routes'
+                title: '<img src="CamdenTrain/styles/legend/CurrentRoutes_5.png" /> Current Routes'
             });
 var format_FutureRoutes_6 = new ol.format.GeoJSON();
 var features_FutureRoutes_6 = format_FutureRoutes_6.readFeatures(json_FutureRoutes_6, 
@@ -100,7 +100,7 @@ var lyr_FutureRoutes_6 = new ol.layer.Vector({
                 style: style_FutureRoutes_6,
                 popuplayertitle: "Future Routes",
                 interactive: false,
-                title: '<img src="styles/legend/FutureRoutes_6.png" /> Future Routes'
+                title: '<img src="CamdenTrain/styles/legend/FutureRoutes_6.png" /> Future Routes'
             });
 var format_CurrentStations_7 = new ol.format.GeoJSON();
 var features_CurrentStations_7 = format_CurrentStations_7.readFeatures(json_CurrentStations_7, 
@@ -115,7 +115,7 @@ var lyr_CurrentStations_7 = new ol.layer.Vector({
                 style: style_CurrentStations_7,
                 popuplayertitle: "Current Stations",
                 interactive: false,
-                title: '<img src="styles/legend/CurrentStations_7.png" /> Current Stations'
+                title: '<img src="CamdenTrain/styles/legend/CurrentStations_7.png" /> Current Stations'
             });
 var format_2028CarTripsDay_8 = new ol.format.GeoJSON();
 var features_2028CarTripsDay_8 = format_2028CarTripsDay_8.readFeatures(json_2028CarTripsDay_8, 
@@ -131,11 +131,11 @@ var lyr_2028CarTripsDay_8 = new ol.layer.Vector({
                 popuplayertitle: "2028 Car Trips/Day",
                 interactive: false,
     title: '2028 Car Trips/Day<br />\
-    <img src="styles/legend/2028CarTripsDay_8_0.png" /> 3,369 - 5,695<br />\
-    <img src="styles/legend/2028CarTripsDay_8_1.png" /> 5,695 - 11,353<br />\
-    <img src="styles/legend/2028CarTripsDay_8_2.png" /> 11,353 - 22,150<br />\
-    <img src="styles/legend/2028CarTripsDay_8_3.png" /> 22,150 - 26,477<br />\
-    <img src="styles/legend/2028CarTripsDay_8_4.png" /> 26,477 - 46,951<br />'
+    <img src="CamdenTrain/styles/legend/2028CarTripsDay_8_0.png" /> 3,369 - 5,695<br />\
+    <img src="CamdenTrain/styles/legend/2028CarTripsDay_8_1.png" /> 5,695 - 11,353<br />\
+    <img src="CamdenTrain/styles/legend/2028CarTripsDay_8_2.png" /> 11,353 - 22,150<br />\
+    <img src="CamdenTrain/styles/legend/2028CarTripsDay_8_3.png" /> 22,150 - 26,477<br />\
+    <img src="CamdenTrain/styles/legend/2028CarTripsDay_8_4.png" /> 26,477 - 46,951<br />'
         });
 var format_2028Population_9 = new ol.format.GeoJSON();
 var features_2028Population_9 = format_2028Population_9.readFeatures(json_2028Population_9, 
@@ -151,11 +151,11 @@ var lyr_2028Population_9 = new ol.layer.Vector({
                 popuplayertitle: "2028 Population",
                 interactive: false,
     title: '2028 Population<br />\
-    <img src="styles/legend/2028Population_9_0.png" /> 20,557 - 28,918<br />\
-    <img src="styles/legend/2028Population_9_1.png" /> 28,918 - 46,690<br />\
-    <img src="styles/legend/2028Population_9_2.png" /> 46,690 - 91,212<br />\
-    <img src="styles/legend/2028Population_9_3.png" /> 91,212 - 101,040<br />\
-    <img src="styles/legend/2028Population_9_4.png" /> 101,040 - 144,608<br />'
+    <img src="CamdenTrain/styles/legend/2028Population_9_0.png" /> 20,557 - 28,918<br />\
+    <img src="CamdenTrain/styles/legend/2028Population_9_1.png" /> 28,918 - 46,690<br />\
+    <img src="CamdenTrain/styles/legend/2028Population_9_2.png" /> 46,690 - 91,212<br />\
+    <img src="CamdenTrain/styles/legend/2028Population_9_3.png" /> 91,212 - 101,040<br />\
+    <img src="CamdenTrain/styles/legend/2028Population_9_4.png" /> 101,040 - 144,608<br />'
         });
 var format_ValueUpliftM_10 = new ol.format.GeoJSON();
 var features_ValueUpliftM_10 = format_ValueUpliftM_10.readFeatures(json_ValueUpliftM_10, 
@@ -171,11 +171,11 @@ var lyr_ValueUpliftM_10 = new ol.layer.Vector({
                 popuplayertitle: "Value Uplift ($M)",
                 interactive: false,
     title: 'Value Uplift ($M)<br />\
-    <img src="styles/legend/ValueUpliftM_10_0.png" /> 83 - 141<br />\
-    <img src="styles/legend/ValueUpliftM_10_1.png" /> 142 - 239<br />\
-    <img src="styles/legend/ValueUpliftM_10_2.png" /> 240 - 358<br />\
-    <img src="styles/legend/ValueUpliftM_10_3.png" /> 350 - 716<br />\
-    <img src="styles/legend/ValueUpliftM_10_4.png" /> 717 - 1,044<br />'
+    <img src="CamdenTrain/styles/legend/ValueUpliftM_10_0.png" /> 83 - 141<br />\
+    <img src="CamdenTrain/styles/legend/ValueUpliftM_10_1.png" /> 142 - 239<br />\
+    <img src="CamdenTrain/styles/legend/ValueUpliftM_10_2.png" /> 240 - 358<br />\
+    <img src="CamdenTrain/styles/legend/ValueUpliftM_10_3.png" /> 350 - 716<br />\
+    <img src="CamdenTrain/styles/legend/ValueUpliftM_10_4.png" /> 717 - 1,044<br />'
         });
 var format_PotentialStations_11 = new ol.format.GeoJSON();
 var features_PotentialStations_11 = format_PotentialStations_11.readFeatures(json_PotentialStations_11, 
@@ -190,7 +190,7 @@ var lyr_PotentialStations_11 = new ol.layer.Vector({
                 style: style_PotentialStations_11,
                 popuplayertitle: "Potential Stations",
                 interactive: true,
-                title: '<img src="styles/legend/PotentialStations_11.png" /> Potential Stations'
+                title: '<img src="CamdenTrain/styles/legend/PotentialStations_11.png" /> Potential Stations'
             });
 var group_PopulationDensity = new ol.layer.Group({
                                 layers: [],
