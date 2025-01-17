@@ -26,16 +26,16 @@ var lyr_SocioeconomicStatus_1 = new ol.layer.Vector({
                 popuplayertitle: "Socioeconomic Status",
                 interactive: true,
     title: 'Socioeconomic Status<br />\
-    <img src="styles/legend/SocioeconomicStatus_1_0.png" /> Bottom 10%<br />\
-    <img src="styles/legend/SocioeconomicStatus_1_1.png" /> Bottom 20%<br />\
-    <img src="styles/legend/SocioeconomicStatus_1_2.png" /> Bottom 30%<br />\
-    <img src="styles/legend/SocioeconomicStatus_1_3.png" /> Bottom 40%<br />\
-    <img src="styles/legend/SocioeconomicStatus_1_4.png" /> Bottom 50%<br />\
-    <img src="styles/legend/SocioeconomicStatus_1_5.png" /> Top 50%<br />\
-    <img src="styles/legend/SocioeconomicStatus_1_6.png" /> Top 40%<br />\
-    <img src="styles/legend/SocioeconomicStatus_1_7.png" /> Top 30%<br />\
-    <img src="styles/legend/SocioeconomicStatus_1_8.png" /> Top 20%<br />\
-    <img src="styles/legend/SocioeconomicStatus_1_9.png" /> Top 10%<br />'
+    <img src="GreaterSydneyOpenSpace/styles/legend/SocioeconomicStatus_1_0.png" /> Bottom 10%<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/SocioeconomicStatus_1_1.png" /> Bottom 20%<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/SocioeconomicStatus_1_2.png" /> Bottom 30%<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/SocioeconomicStatus_1_3.png" /> Bottom 40%<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/SocioeconomicStatus_1_4.png" /> Bottom 50%<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/SocioeconomicStatus_1_5.png" /> Top 50%<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/SocioeconomicStatus_1_6.png" /> Top 40%<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/SocioeconomicStatus_1_7.png" /> Top 30%<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/SocioeconomicStatus_1_8.png" /> Top 20%<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/SocioeconomicStatus_1_9.png" /> Top 10%<br />'
         });
 var format_PublicOpenSpaceincludingbushlandCoverage_2 = new ol.format.GeoJSON();
 var features_PublicOpenSpaceincludingbushlandCoverage_2 = format_PublicOpenSpaceincludingbushlandCoverage_2.readFeatures(json_PublicOpenSpaceincludingbushlandCoverage_2, 
@@ -51,11 +51,10 @@ var lyr_PublicOpenSpaceincludingbushlandCoverage_2 = new ol.layer.Vector({
                 popuplayertitle: "Public Open Space (inc. bushland) Coverage",
                 interactive: true,
     title: 'Public Open Space (including bushland) Coverage (%)<br />\
-    <img src="styles/legend/PublicOpenSpaceincludingbushlandCoverage_2_0.png" /> 0 - 3<br />\
-    <img src="styles/legend/PublicOpenSpaceincludingbushlandCoverage_2_1.png" /> 3 - 8<br />\
-    <img src="styles/legend/PublicOpenSpaceincludingbushlandCoverage_2_2.png" /> 8 - 13<br />\
-    <img src="styles/legend/PublicOpenSpaceincludingbushlandCoverage_2_3.png" /> 13 - 24<br />\
-    <img src="styles/legend/PublicOpenSpaceincludingbushlandCoverage_2_4.png" /> 24 - 100<br />'
+    <img src="GreaterSydneyOpenSpace/styles/legend/PublicOpenSpaceincludingbushlandCoverage_2_1.png" /> 3 - 8<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/PublicOpenSpaceincludingbushlandCoverage_2_2.png" /> 8 - 13<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/PublicOpenSpaceincludingbushlandCoverage_2_3.png" /> 13 - 24<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/PublicOpenSpaceincludingbushlandCoverage_2_4.png" /> 24 - 100<br />'
         });
 var format_PublicOpenSpaceincludingbushlandperCapitasqm_3 = new ol.format.GeoJSON();
 var features_PublicOpenSpaceincludingbushlandperCapitasqm_3 = format_PublicOpenSpaceincludingbushlandperCapitasqm_3.readFeatures(json_PublicOpenSpaceincludingbushlandperCapitasqm_3, 
@@ -71,11 +70,11 @@ var lyr_PublicOpenSpaceincludingbushlandperCapitasqm_3 = new ol.layer.Vector({
                 popuplayertitle: "Public Open Space (inc. bushland) per Capita",
                 interactive: true,
     title: 'Public Open Space (including bushland) per Capita (sqm)<br />\
-    <img src="styles/legend/PublicOpenSpaceincludingbushlandperCapitasqm_3_0.png" /> 0 - 10<br />\
-    <img src="styles/legend/PublicOpenSpaceincludingbushlandperCapitasqm_3_1.png" /> 10 - 30<br />\
-    <img src="styles/legend/PublicOpenSpaceincludingbushlandperCapitasqm_3_2.png" /> 30 - 64<br />\
-    <img src="styles/legend/PublicOpenSpaceincludingbushlandperCapitasqm_3_3.png" /> 64 - 326<br />\
-    <img src="styles/legend/PublicOpenSpaceincludingbushlandperCapitasqm_3_4.png" /> 326 - 15402267<br />'
+    <img src="GreaterSydneyOpenSpace/styles/legend/PublicOpenSpaceincludingbushlandperCapitasqm_3_0.png" /> 0 - 10<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/PublicOpenSpaceincludingbushlandperCapitasqm_3_1.png" /> 10 - 30<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/PublicOpenSpaceincludingbushlandperCapitasqm_3_2.png" /> 30 - 64<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/PublicOpenSpaceincludingbushlandperCapitasqm_3_3.png" /> 64 - 326<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/PublicOpenSpaceincludingbushlandperCapitasqm_3_4.png" /> 326 - 15402267<br />'
         });
 var format_PublicOpenSpaceAreaCoverage_4 = new ol.format.GeoJSON();
 var features_PublicOpenSpaceAreaCoverage_4 = format_PublicOpenSpaceAreaCoverage_4.readFeatures(json_PublicOpenSpaceAreaCoverage_4, 
@@ -91,11 +90,11 @@ var lyr_PublicOpenSpaceAreaCoverage_4 = new ol.layer.Vector({
                 popuplayertitle: "Public Open Space Area Coverage",
                 interactive: true,
     title: 'Public Open Space Area Coverage (%)<br />\
-    <img src="styles/legend/PublicOpenSpaceAreaCoverage_4_0.png" /> 0 - 0.36<br />\
-    <img src="styles/legend/PublicOpenSpaceAreaCoverage_4_1.png" /> 0.36 - 2.81<br />\
-    <img src="styles/legend/PublicOpenSpaceAreaCoverage_4_2.png" /> 2.81 - 5.65<br />\
-    <img src="styles/legend/PublicOpenSpaceAreaCoverage_4_3.png" /> 5.65 - 10.67<br />\
-    <img src="styles/legend/PublicOpenSpaceAreaCoverage_4_4.png" /> 10.67 - 85.29<br />'
+    <img src="GreaterSydneyOpenSpace/styles/legend/PublicOpenSpaceAreaCoverage_4_0.png" /> 0 - 0.36<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/PublicOpenSpaceAreaCoverage_4_1.png" /> 0.36 - 2.81<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/PublicOpenSpaceAreaCoverage_4_2.png" /> 2.81 - 5.65<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/PublicOpenSpaceAreaCoverage_4_3.png" /> 5.65 - 10.67<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/PublicOpenSpaceAreaCoverage_4_4.png" /> 10.67 - 85.29<br />'
         });
 var format_PublicOpenSpaceperCapitasqm_5 = new ol.format.GeoJSON();
 var features_PublicOpenSpaceperCapitasqm_5 = format_PublicOpenSpaceperCapitasqm_5.readFeatures(json_PublicOpenSpaceperCapitasqm_5, 
@@ -111,11 +110,11 @@ var lyr_PublicOpenSpaceperCapitasqm_5 = new ol.layer.Vector({
                 popuplayertitle: "Public Open Space per Capita",
                 interactive: true,
     title: 'Public Open Space per Capita (sqm)<br />\
-    <img src="styles/legend/PublicOpenSpaceperCapitasqm_5_0.png" /> 0 - 4.3<br />\
-    <img src="styles/legend/PublicOpenSpaceperCapitasqm_5_1.png" /> 4.3 - 13.9<br />\
-    <img src="styles/legend/PublicOpenSpaceperCapitasqm_5_2.png" /> 13.9 - 27.4<br />\
-    <img src="styles/legend/PublicOpenSpaceperCapitasqm_5_3.png" /> 27.4 - 56<br />\
-    <img src="styles/legend/PublicOpenSpaceperCapitasqm_5_4.png" /> 56 - 44681.1<br />'
+    <img src="GreaterSydneyOpenSpace/styles/legend/PublicOpenSpaceperCapitasqm_5_0.png" /> 0 - 4.3<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/PublicOpenSpaceperCapitasqm_5_1.png" /> 4.3 - 13.9<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/PublicOpenSpaceperCapitasqm_5_2.png" /> 13.9 - 27.4<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/PublicOpenSpaceperCapitasqm_5_3.png" /> 27.4 - 56<br />\
+    <img src="GreaterSydneyOpenSpace/styles/legend/PublicOpenSpaceperCapitasqm_5_4.png" /> 56 - 44681.1<br />'
         });
 var format_LocalGovernmentAreas_6 = new ol.format.GeoJSON();
 var features_LocalGovernmentAreas_6 = format_LocalGovernmentAreas_6.readFeatures(json_LocalGovernmentAreas_6, 
